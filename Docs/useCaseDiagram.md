@@ -15,30 +15,33 @@ This diagram provides a high-level overview of the functional requirements for t
 ## Diagram
 
 ```mermaid
-usecaseDiagram
-    actor "Tenant" as T
-    actor "Landlord" as L
+flowchart TD
+    %% Actors
+    T[Tenant]
+    L[Landlord]
 
-    package "Marketplace" {
-        usecase "Search Properties" as UC1
-        usecase "Apply for Property" as UC2
-    }
+    %% Subsystems
+    subgraph Marketplace
+        UC1(Search Properties)
+        UC2(Apply for Property)
+    end
 
-    package "Property Management" {
-        usecase "Create Property Listing" as UC3
-        usecase "Generate Property Code" as UC4
-        usecase "Join via Code" as UC5
-        usecase "Toggle Public/Private" as UC6
-    }
+    subgraph Property_Management [Property Management]
+        UC3(Create Property Listing)
+        UC4(Generate Property Code)
+        UC5(Join via Code)
+        UC6(Toggle Public/Private)
+    end
 
-    package "Daily Operations" {
-        usecase "Pay Rent" as UC7
-        usecase "Submit Maintenance Ticket" as UC8
-        usecase "Resolve Ticket" as UC9
-        usecase "View Financial Stats" as UC10
-        usecase "Chat with Landlord/Tenant" as UC11
-    }
+    subgraph Daily_Operations [Daily Operations]
+        UC7(Pay Rent)
+        UC8(Submit Maintenance Ticket)
+        UC9(Resolve Ticket)
+        UC10(View Financial Stats)
+        UC11(Chat with Landlord/Tenant)
+    end
 
+    %% Relationships
     T --> UC1
     T --> UC2
     L --> UC3
