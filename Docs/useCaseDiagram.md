@@ -15,7 +15,7 @@ This diagram provides a high-level overview of the functional requirements for t
 ## Diagram
 
 ```mermaid
-useCaseDiagram
+usecaseDiagram
     actor "Tenant" as T
     actor "Landlord" as L
 
