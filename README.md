@@ -1,4 +1,5 @@
 ## Project: Landy (Small Landlord & Tenant Portal)
+#Demo video link :- https://drive.google.com/file/d/1zykydi2AIsTvyj9gHNL-Ce9Y7uqqotIL/view?usp=sharing
 # Core Concept
 # A full-cycle "PropTech" platform that handles property discovery (Marketplace) and ongoing management (Maintenance/Payments) using a unique Property Code system for security and onboarding.
 ## 📱 1. The Tenant Journey
